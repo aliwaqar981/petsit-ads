@@ -1,5 +1,139 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetSit - Trusted Pet Care</title>
+    <style>
+      :root {
+        --primary: #ff8c0e;
+        --secondary: #ffffff;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--secondary);
+        color: #333;
+      }
+
+      header {
+        background-color: var(--primary);
+        color: var(--secondary);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        color: var(--secondary);
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background-color: #fff7f0;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        color: var(--primary);
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+        margin: 20px auto;
+        max-width: 600px;
+      }
+
+      .hero button {
+        background-color: var(--primary);
+        border: none;
+        padding: 14px 28px;
+        color: var(--secondary);
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .hero button:hover {
+        background-color: #e67600;
+      }
+
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 60px 20px;
+        background-color: #fff;
+      }
+
+      .feature {
+        flex: 1 1 250px;
+        max-width: 300px;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .feature h3 {
+        color: var(--primary);
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--primary);
+        color: var(--secondary);
+      }
+    </style>
+  </head>
   <body>
-    <p>Hello world</p>
+    <header>
+      <h1>PetSit</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Your Pet's Best Friend</h2>
+      <p>
+        Find trusted pet sitters, book walks, or schedule drop-in visits. PetSit
+        ensures your furry friend is in loving hands when you're away.
+      </p>
+      <button>Get Started</button>
+    </section>
+
+    <section class="features" id="features">
+      <div class="feature">
+        <h3>Trusted Sitters</h3>
+        <p>
+          Verified sitters with reviews and ratings ensure peace of mind while
+          you're away.
+        </p>
+      </div>
+      <div class="feature">
+        <h3>Flexible Scheduling</h3>
+        <p>Book walks, house visits, or overnight stays at your convenience.</p>
+      </div>
+      <div class="feature">
+        <h3>Live Updates</h3>
+      </div>
+    </section>
   </body>
 </html>
